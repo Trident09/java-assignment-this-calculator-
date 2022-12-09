@@ -3,13 +3,16 @@ import java.util.Scanner;
 class calculator
 {
 
+  //member variable
   public double a;
   public double b;
   public char operator;
   public double result;
 
+  //parameterised constructer
   calculator(double a, double b)
   {
+    //use of this keyword
     this.a = a;
     this.b = b;
   }
@@ -17,27 +20,27 @@ class calculator
   void addition()
   {
     result = (a + b);
-    System.out.println("Ans = "+result+"/n");
+    System.out.println("Ans = "+result);
   }
   void substraction()
   {
     result = (a - b);
-    System.out.println("Ans = "+result+"/n");
+    System.out.println("Ans = "+result);
   }
   void multiplication()
   {
     result = (a * b);
-    System.out.println("Ans = "+result+"/n");
+    System.out.println("Ans = "+result);
   }
   void division()
   {
     result = (a / b);
-    System.out.println("Ans = "+result+"/n");
+    System.out.println("Ans = "+result);
   }
   void modulo()
   {
     result = (a % b);
-    System.out.println("Ans = "+result+"/n");
+    System.out.println("Ans = "+result);
   }
 
   public static void main(String[] args)
