@@ -43,11 +43,11 @@ class calculator
   public static void main(String[] args)
   {
     Scanner input = new Scanner(System.in);
-    System.out.println("Enter two numbers ^-^");
-    double a = input.nextdouble();
-    double b = input.nextdouble();
+    System.out.println("Enter two numbers with operator in between ^-^");
+    double a = input.nextDouble();
     char operator = input.next().charAt(0);
-    calculator op = new calculator(double a, double b);
+    double b = input.nextDouble();
+    calculator op = new calculator(a,b);
     switch (operator)
       {
         case '+' :
